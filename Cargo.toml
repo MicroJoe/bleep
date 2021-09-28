@@ -1,0 +1,14 @@
+[package]
+name = "bleep"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = "3.0.0-beta.4"
+rodio = "0.14.0"
+phf = "0.10.0"
+
+[build-dependencies]
+phf_codegen = "0.10.0"
