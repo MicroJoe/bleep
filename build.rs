@@ -30,6 +30,8 @@ fn parse_dir_rec(
         } else if !ft.is_file() && !ft.is_symlink() {
             println!("cargo:warning=file {:?} was not recognized", &f);
             continue;
+        } else if f.file_name() == ".gitkeep" {
+            continue;
         }
 
         let path = f.path();
